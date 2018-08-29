@@ -16,7 +16,5 @@ if(sessionStorage.getItem('USERSESSID') === null){
   sessionStorage.setItem('USERSESSID', generateSession());
 }
 
-console.log(sessionStorage.getItem('USERSESSID'));
-
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

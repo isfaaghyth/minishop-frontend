@@ -3,16 +3,6 @@ import React from 'react';
 export class CartItem extends React.Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      amount: 1
-    };
-
-    this.handleAmount = this.handleAmount.bind(this);
-  }
-
-  handleAmount(e){
-    this.setState({amount: e.target.value});
   }
 
   render(){
@@ -32,9 +22,6 @@ export class CartItem extends React.Component {
             <h6>
               <strong>25.00 <span className="text-muted">x</span></strong>
             </h6>
-          </div>
-          <div className="col-xs-4">
-            <input type="text" className="form-control input-sm" value={this.state.amount} onChange={this.handleAmount} />
           </div>
           <div className="col-xs-2">
             <button type="button" className="btn btn-link btn-xs">

@@ -1,18 +1,20 @@
 import React from 'react';
+import axios from 'axios';
 
 import { ProductWrapper } from './ProductWrapper';
 
 export class Products extends React.Component {
   constructor(props){
     super(props);
-    
+
     this.state = {
       data: []
     }
   }
 
   componentDidMount(){
-    console.log(sessionStorage.getItem('MEME'));
+    axios.get('http://35.240.133.163')
+      .then(response => console.log(response));
   }
 
   render(){
