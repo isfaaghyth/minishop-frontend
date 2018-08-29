@@ -1,10 +1,15 @@
 import React from 'react';
+
 import { Header } from './Header';
+import { Products } from './Products';
 
 export default class HomePage extends React.Component {
   render(){
     return (
-      <Header />
+      <div>
+        <Header />
+        <Products />
+      </div>
     )
   }
 }
