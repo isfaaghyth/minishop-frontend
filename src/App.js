@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import { HomePage } from './components/home/index.js';
 import { ProductPage } from './components/product/index.js';
+import { CheckoutPage } from './components/checkout/index.js';
 
 class App extends Component {
   render() {
@@ -33,7 +34,8 @@ class App extends Component {
           </nav>
 
           <Route exact path="/" component={HomePage} />
-          <Route path="/products" component={ProductPage} />
+          <Route exact path="/products" component={ProductPage} />
+          <Route exact path="/checkout" component={CheckoutPage} />
         </div>
       </BrowserRouter>
     );
