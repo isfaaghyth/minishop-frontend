@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { Header } from './Header';
-import { Checkout } from './Checkout';
+import { CheckoutWrapper } from './CheckoutWrapper';
 
 export const CheckoutPage = () => (
   <div>
     <Header />
-    <Checkout />
+    <CheckoutWrapper />
   </div>
 );

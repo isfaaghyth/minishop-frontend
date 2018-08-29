@@ -4,7 +4,7 @@ import { ProductItem } from './ProductItem';
 
 export class ProductWrapper extends React.Component {
   addToCart(){
-    // todo
+    alert("Terclique");
   }
 
   render(){

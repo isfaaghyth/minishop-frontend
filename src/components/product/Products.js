@@ -3,7 +3,9 @@ import React from 'react';
 import { ProductWrapper } from './ProductWrapper';
 
 export class Products extends React.Component {
-  construct(props){
+  constructor(props){
+    super(props);
+    
     this.state = {
       data: []
     }
